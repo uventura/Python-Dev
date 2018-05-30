@@ -147,9 +147,10 @@ def straight(x,y):
         
 #----------------[ EXECUTION ]----------------
 graphic = turtle.Turtle()
+'''
 #Create a straight just work for the first quadrant at moment.{DON'T FORGOT IDIOT}
 #TEST 01
-'''Creating the cordenates'''
+#Creating the cordenates
 x = []
 y = []
 c = 0
@@ -157,15 +158,25 @@ while c<9:
     c+=1
     x.append(c*10)
     y.append(c*30)
-'''Construct the plan'''   
+#Construct the plan  
 constructPlan(x,y)
-'''Draw the cordenates'''
+#Draw the cordenates
 c=-1
 while c<len(x)-1:
     c+=1
     constructCord(x[c],y[c])
-'''The straight'''
+#The straight
 findPoint(x[0],y[0]) #To create the straight it's necessary goes to the first cordenate
 straight(x,y)
+'''
 
+#Test 02
+x = [4,9,50,80,103,55,-21,-43,-7]
+y = [10,14,-40,60,34,56,66,-67,9]
+
+constructPlan(x,y)
+c=-1
+while c<len(x)-1:
+    c+=1
+    constructCord(x[c],y[c])
 turtle.mainloop()
