@@ -71,8 +71,7 @@ while c1<nItens:
     c1+=1
 
 #Variações Percentuais
-print('-'*50)
-print('Caso a variação seja negativa, então é chamado de deflação.')
+print('-'*50+'\nCaso a variação seja negativa, então é chamado de deflação.')
 a = 0
 b = 0
 while a<nItens:
